@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.col-1-of-2 {
+    border: 1px solid black;
+    width: calc(50% - #{$gutter-horizontal});
+}
