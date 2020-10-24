@@ -17,16 +17,32 @@
   </head>
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
       <div class="navigation__background">&nbsp;</div>
       <div class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>About Natous</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your Benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular Tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book Now</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -77,11 +93,12 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <img
+              <img alt="something" srcset="/img/nat-1.jpg 300w, /img/nat-1-large.jpg 1000w" sizes="(max-width: 900px) 50vw, (max-width: 600px) 47vw, 300px" src="/img/nat-1-large.jpg" class="composition__photo composition__photo--p1">
+              <!-- <img
                 src="./img/nat-1-large.jpg"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
-              />
+              /> -->
               <img
                 src="./img/nat-2-large.jpg"
                 alt="Photo 2"
@@ -376,11 +393,7 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="./img/logo-green-2x.png"
-          alt="Full logo"
-          class="footer__logo"
-        />
+        <img src="/img/logo-green-2x.png" alt="full logo" srcset="/img/logo-green-1x.png 100w, /img/logo-green-2x.png 200w" class="footer__logo">
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -407,7 +420,9 @@
         <div class="col-1-of-2">
           <p class="footer__copyright">
             Built my <a href="#" class="footer__link">Vanyó Péter Pál</a> for
-            practice. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi eos voluptatum repellendus unde enim saepe, in libero, amet harum soluta error ex nesciunt perspiciatis vel.
+            practice. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Excepturi eos voluptatum repellendus unde enim saepe, in libero,
+            amet harum soluta error ex nesciunt perspiciatis vel.
           </p>
         </div>
       </div>
@@ -416,14 +431,32 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="./img/nat-8.jpg" alt="Tour photo" class="popup__img">
-          <img src="./img/nat-9.jpg" alt="Tour photo" class="popup__img">
+          <img src="./img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="./img/nat-9.jpg" alt="Tour photo" class="popup__img" />
         </div>
         <div class="popup__right">
           <a href="#section__tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms befor looking</h3>
-          <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in facilis optio doloribus soluta odit reiciendis voluptates non, labore natus ratione cum libero, nesciunt, incidunt molestiae aspernatur ea eaque fuga neque corporis ut asperiores maiores esse! Deleniti neque quaerat obcaecati veniam reiciendis dolores hic dignissimos velit illum aspernatur ea voluptatum labore qui molestiae repellat omnis, doloribus ad expedita unde nisi laboriosam voluptatibus sint impedit modi. Consectetur obcaecati unde corrupti modi cupiditate adipisci explicabo. Labore, molestiae tenetur voluptatem id maxime deleniti doloremque. Iure nostrum consequuntur veniam minus eum vero esse voluptatibus aperiam repudiandae. Ipsam ut, incidunt nihil expedita esse commodi asperiores ducimus saepe nulla veritatis maxime possimus, aliquid tempora doloremque!</p>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms befor looking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+            in facilis optio doloribus soluta odit reiciendis voluptates non,
+            labore natus ratione cum libero, nesciunt, incidunt molestiae
+            aspernatur ea eaque fuga neque corporis ut asperiores maiores esse!
+            Deleniti neque quaerat obcaecati veniam reiciendis dolores hic
+            dignissimos velit illum aspernatur ea voluptatum labore qui
+            molestiae repellat omnis, doloribus ad expedita unde nisi laboriosam
+            voluptatibus sint impedit modi. Consectetur obcaecati unde corrupti
+            modi cupiditate adipisci explicabo. Labore, molestiae tenetur
+            voluptatem id maxime deleniti doloremque. Iure nostrum consequuntur
+            veniam minus eum vero esse voluptatibus aperiam repudiandae. Ipsam
+            ut, incidunt nihil expedita esse commodi asperiores ducimus saepe
+            nulla veritatis maxime possimus, aliquid tempora doloremque!
+          </p>
           <a href="" class="btn btn--green">Book now</a>
         </div>
       </div>
